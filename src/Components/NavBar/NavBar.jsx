@@ -62,23 +62,15 @@ const PrimarySearchAppBar = ({ totalItems }) => {
             className={classes.title}
             color="inherit"
           >
-            <img
-              src={logo}
-              alt="commerce.js"
-              height="25px"
-              className={classes.image}
+            <img src={logo} alt="commerce.js" height="25px" className={classes.image}
             />{" "}
-            Commerce.js
+            E-Commerce Store
           </Typography>
           <div className={classes.grow} />
           {location.pathname === "/" && (
             <div className={classes.button}>
               <IconButton
-                component={Link}
-                to="/cart"
-                aria-label="Show cart items"
-                color="inherit"
-              >
+                component={Link} to="/cart" aria-label="Show cart items" color="inherit">
                 <Badge badgeContent={totalItems} color="secondary">
                   <ShoppingCart />
                 </Badge>
